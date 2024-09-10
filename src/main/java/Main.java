@@ -1,5 +1,4 @@
 
-
 import java.util.Scanner;
 
 public class Main {
@@ -20,7 +19,7 @@ public class Main {
             System.out.println("Enter your choice:");
 
             int choice = sc.nextInt();
-            sc.nextLine(); // Consume newline
+            sc.nextLine();
 
             switch (choice) {
                 case 1:
@@ -34,7 +33,7 @@ public class Main {
                     try {
                         System.out.println("Enter amount inserted (in dollars):");
                         double amountInserted = sc.nextDouble();
-                        sc.nextLine(); // Consume newline
+                        sc.nextLine(); 
                         vendingMachine.buyProduct(productName, amountInserted);
                     } catch (Exception e) {
                         System.out.println(e.getMessage());
